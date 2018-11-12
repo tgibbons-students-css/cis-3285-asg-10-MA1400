@@ -5,5 +5,6 @@ namespace CurrencyTrader.Contracts
     public interface ITradeStorage
     {
         void Persist(IEnumerable<TradeRecord> trades);
+        ILogger Getlogger();
     }
 }
